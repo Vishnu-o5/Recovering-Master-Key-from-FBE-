@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android FBE encryption-policy probe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reproduces the device-evaluation method from Groß, Busch, Müller (2021), “One key to rule them all” — reports the content/filename encryption mode via ioctl(FS_IOC_GET_ENCRYPTION_POLICY), and whether this device’s key derivation is the old (vulnerable) or new scheme."
+        android:textSize="13sp"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/runProbeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run probe on app data directory" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textIsSelectable="true"
+            android:textSize="13sp" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+# Android / Gradle
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Evidence / forensic artifacts (never commit these)
+*.lime
+*.img
+*.raw
+*.dd
+master_keys.txt
